@@ -18,3 +18,8 @@
 .border {
   border: 1px black solid;
 }
+
+.red {
+  color: gold;
+  font: bold;
+}

@@ -165,7 +165,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <ScoreBoard score={score}/>
+      <ScoreBoard score={ score }/>
       <div className="game">
         { currentBoard.map((color, index) => (
         <img 
