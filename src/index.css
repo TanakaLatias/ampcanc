@@ -1,5 +1,4 @@
 .app {
-  display: flex;
   padding: 30px;
 }
 
@@ -19,7 +18,19 @@
   border: 1px black solid;
 }
 
-.red {
-  color: gold;
-  font: bold;
+@media screen and (max-width: 800px) {
+
+  .app {
+    padding: 0;
+  }
+
+  .game {
+    width: 100%;
+  }
+  
+  .game img {
+    width : 12.5%;
+    width : -webkit-calc(100% / 8) ;
+    width : calc(100% / 8) ;
+  }
 }

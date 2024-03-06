@@ -159,13 +159,13 @@ const App = () => {
       setBlank();
       down();
       setCurrentBoard([...currentBoard]);
-    }, 180);
+    }, 200);
     return () => clearInterval(timer);
   }, [check]);
 
   return (
     <div className="app">
-      <ScoreBoard score={ score }/>
+      <ScoreBoard score={score}/>
       <div className="game">
         { currentBoard.map((color, index) => (
         <img 
@@ -181,6 +181,9 @@ const App = () => {
         onDragLeave={(e)=>e.preventDefault()}
         onDrop={dragDrop}
         onDragEnd={dragEnd}
+        onTouchStart={dragStart}
+        onTouchMove={dragOver}
+        onTouchEnd={dragEnd}
         />
         )) }
       </div>
